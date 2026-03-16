@@ -1,7 +1,8 @@
 services:
   bot:
+    container_name: alert-bot
     build: .
     env_file: .env
     ports:
-      - "127.0.0.1:8844:8844"
+      - "8844:8844"
     restart: unless-stopped
